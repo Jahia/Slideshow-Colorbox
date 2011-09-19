@@ -1,0 +1,20 @@
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+
+[jnt:colorboxSlideshow] > jnt:content, jmix:multimediaContent
+ - style (string, choicelist[resourceBundle,moduleImage='png']) = 'style1' < 'style1','style2','style3','style4','style5'
+ - transition (string, choicelist[resourceBundle]) < 'none', 'fade', 'elastic'
+ - transitionSpeed (long)
+ - slideshow (boolean)
+ - slideshowSpeed (long)
+ - slideshowAuto (boolean)
+ - imagesSizeType (string, choicelist[resourceBundle]) = 'fixed' < 'fixed', 'proportional'
+ - imagesWidth (long)
+ - imagesHeight (long)
+ - thumbnailSizeType (string, choicelist[resourceBundle]) = 'fixed' < 'fixed', 'proportional'
+ - thumbnailWidth (long)
+ - thumbnailHeight (long)
+ + * (jnt:colorboxItem)
+
+[jnt:colorboxItem] > jnt:imageReference
+

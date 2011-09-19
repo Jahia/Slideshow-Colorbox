@@ -1,0 +1,6 @@
+.bodywrapper .colorboxThumbnail img {
+    float: left;
+    margin-right: 0.5em;
+    padding: 0;
+    border: 1px solid #cccccc;
+}
